@@ -16,6 +16,8 @@ import matplotlib.font_manager as fm
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 import warnings
 warnings.filterwarnings('ignore')
+import spacy
+spacy.cli.download("en_core_web_sm")
 
 # Set a consistent font for matplotlib
 plt.rcParams['font.family'] = 'DejaVu Sans'
@@ -2449,3 +2451,4 @@ with tab6:
 st.markdown("---")
 
 st.caption(f"© {datetime.now().year} {UNIVERSITY_INFO['name']}. All rights reserved. | Chatbot version 2.0")
+
